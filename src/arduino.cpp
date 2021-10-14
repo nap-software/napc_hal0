@@ -2,7 +2,7 @@
 	#include <Arduino.h> // Serial, millis(), delay()
 
 	extern "C" {
-		#include "nap_hal0.h"
+		#include "internal.h"
 
 		const char *nap_hal0__platform(void) {
 			return "arduino";
@@ -11,6 +11,7 @@
 		void nap_hal0__init(void) {
 			Serial.begin(9600);
 			while (!Serial);
+			nap_hal0_internal__init();
 		}
 
 		void nap_hal0__abort(void) {

@@ -3,7 +3,7 @@
 #endif
 
 #if !defined(ARDUINO)
-	#include "nap_hal0.h"
+	#include "internal.h"
 	#include <stdlib.h> // exit(), EXIT_FAILURE
 	#include <stdio.h> // fprintf(), stderr
 	#include <time.h> // clock_gettime()
@@ -18,6 +18,7 @@
 
 	void nap_hal0__init(void) {
 		clock_gettime(CLOCK_MONOTONIC_RAW, &_programStart);
+		nap_hal0_internal__init();
 	}
 
 	void nap_hal0__abort(void) {
