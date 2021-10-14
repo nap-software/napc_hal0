@@ -1,4 +1,4 @@
-# napc_hal0@0.0.2
+# napc_hal0@0.0.3
 
 This library provides HAL (Hardware Abstraction Layer) for Arduino/Linux on the most basic level:
 
@@ -11,6 +11,18 @@ This library provides HAL (Hardware Abstraction Layer) for Arduino/Linux on the 
 ### `void nap_hal0__init(void)`
 
 Call this function before using any of the `nap_hal0__` functions.
+
+---
+
+### `const char *nap_hal0__version(void)`
+
+Returns the version of the library.
+
+---
+
+### `const char *nap_hal0__platform(void)`
+
+Returns the current platform. (can be `arduino` or `linux`)
 
 ---
 
