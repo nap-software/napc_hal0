@@ -7,6 +7,7 @@ This library provides HAL (Hardware Abstraction Layer) for Arduino/Linux on the 
 - Delaying program execution by a set amount of milliseconds
 - Aborting the program
 
+## ⚡ API
 
 ### `void nap_hal0__init(void)`
 
