@@ -19,6 +19,7 @@
 	void nap_hal0__init(void) {
 		nap_hal0_internal__init();
 		clock_gettime(CLOCK_MONOTONIC_RAW, &_programStart);
+		fprintf(stderr, "(c) by nap.software\n");
 		nap_hal0_internal__ready();
 	}
 

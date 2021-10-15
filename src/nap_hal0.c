@@ -5,14 +5,10 @@
 #include <stdio.h> // vsnprintf()
 
 const char *nap_hal0__version(void) {
-	return "0.0.4";
+	return "0.0.5";
 }
 
-void nap_hal0_internal__init(void) {
-	nap_hal0__printf(
-		"Initializing Hardware Abstraction.\n"
-	);
-}
+void nap_hal0_internal__init(void) {}
 
 void nap_hal0_internal__ready(void) {
 	nap_hal0__printf(

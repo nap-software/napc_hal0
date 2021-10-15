@@ -12,6 +12,7 @@
 			nap_hal0_internal__init();
 			Serial.begin(9600);
 			while (!Serial);
+			Serial.println("(c) by nap.software");
 			nap_hal0_internal__ready();
 		}
 

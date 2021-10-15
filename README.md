@@ -1,4 +1,4 @@
-# napc_hal0@0.0.4
+# napc_hal0@0.0.5
 
 This library provides HAL (Hardware Abstraction Layer) for Arduino/Linux on the most basic level:
 
