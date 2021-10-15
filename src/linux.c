@@ -17,8 +17,9 @@
 	}
 
 	void nap_hal0__init(void) {
-		clock_gettime(CLOCK_MONOTONIC_RAW, &_programStart);
 		nap_hal0_internal__init();
+		clock_gettime(CLOCK_MONOTONIC_RAW, &_programStart);
+		nap_hal0_internal__ready();
 	}
 
 	void nap_hal0__abort(void) {
